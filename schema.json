@@ -21,6 +21,12 @@
         "nested": true
       },
       {
+        "type": "color",
+        "label": "Background Color",
+        "key": "backgroundColor",
+        "defaultValue": "#272727"
+      },
+      {
         "type": "field/array",
         "key": "mappingFor",
         "label": "Mappgin"
