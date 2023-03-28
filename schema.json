@@ -1,0 +1,93 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "datatables",
+    "friendlyName": "datatables",
+    "description": "DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.",
+    "icon": "Table",
+    "settings": [
+      {
+        "type": "dataProvider",
+        "key": "dataProvider",
+        "label": "Data provider",
+        "required": true
+      },
+      {
+        "type": "columns",
+        "label": "Columns",
+        "key": "columns",
+        "dependsOn": "dataProvider",
+        "nested": true
+      },
+      {
+        "type": "field/array",
+        "key": "mappingFor",
+        "label": "Mappgin"
+      },
+      {
+        "type": "field/array",
+        "key": "parSearchableColumns",
+        "label": "parSearchableColumns"
+      },
+      {
+        "type": "text",
+        "key": "parSortBy",
+        "label": "parSortBy"
+      },
+      {
+        "type": "select",
+        "options": [
+          {
+            "value": "ascending",
+            "label": "ascending"
+          },
+          {
+            "value": "descending",
+            "label": "descending"
+          }
+        ],
+        "key": "parSortOrder",
+        "label": "parSortOrder",
+        "defaultValue": "ascending"
+      },
+      {
+        "type": "number",
+        "key": "parRowsPerPage",
+        "label": "parRowsPerPage",
+        "defaultValue": 5
+      },
+      {
+        "type": "boolean",
+        "key": "search",
+        "label": "Show/Disable Search",
+        "defaultValue": true
+      },
+      {
+        "type": "boolean",
+        "key": "resultPage",
+        "label": "Show/Disable Result page",
+        "defaultValue": true
+      },
+      {
+        "type": "boolean",
+        "key": "pagination",
+        "label": "Show/Disable Pagination",
+        "defaultValue": true
+      },
+      {
+        "type": "event",
+        "label": "On Click",
+        "key": "tableEvent",
+        "context": [
+          {
+            "label": "Clicked Event",
+            "key": "data",
+            "type": "object"
+          }
+        ]
+      }
+    ]
+  }
+  
+}
