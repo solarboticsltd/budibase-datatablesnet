@@ -10,7 +10,7 @@
       {
         "type": "dataProvider",
         "key": "dataProvider",
-        "label": "Data provider",
+        "label": "Data Provider",
         "required": true
       },
       {
@@ -21,64 +21,57 @@
         "nested": true
       },
       {
-        "type": "color",
-        "label": "Background Color",
-        "key": "backgroundColor",
-        "defaultValue": "#272727"
+        "type": "multifield",
+        "label": "Searchable Columns",
+        "key": "searchableColumns",
+        "dependsOn": "dataProvider",
+        "nested": true
       },
       {
-        "type": "field/array",
-        "key": "mappingFor",
-        "label": "Mappgin"
-      },
-      {
-        "type": "field/array",
-        "key": "parSearchableColumns",
-        "label": "parSearchableColumns"
-      },
-      {
-        "type": "text",
-        "key": "parSortBy",
-        "label": "parSortBy"
+        "type": "field",
+        "label": "Sort By",
+        "key": "sortBy",
+        "dependsOn": "dataProvider",
+        "nested": true
       },
       {
         "type": "select",
         "options": [
           {
             "value": "ascending",
-            "label": "ascending"
+            "label": "Ascending"
           },
           {
             "value": "descending",
-            "label": "descending"
+            "label": "Descending"
           }
         ],
-        "key": "parSortOrder",
-        "label": "parSortOrder",
+        "key": "sortOrder",
+        "label": "Sort Order",
         "defaultValue": "ascending"
       },
       {
         "type": "number",
-        "key": "parRowsPerPage",
-        "label": "parRowsPerPage",
-        "defaultValue": 5
+        "key": "rowsPerPage",
+        "label": "Rows Per Page",
+        "defaultValue": 10
       },
       {
         "type": "boolean",
         "key": "search",
-        "label": "Show/Disable Search",
+        "label": "Show Search",
         "defaultValue": true
       },
       {
         "type": "boolean",
         "key": "resultPage",
-        "label": "Show/Disable Result page",
+        "label": "Show Result page",
         "defaultValue": true
       },
       {
         "type": "boolean",
         "key": "pagination",
-        "label": "Show/Disable Pagination",
+        "label": "Show Pagination",
         "defaultValue": true
       },
       {
@@ -95,5 +88,4 @@
       }
     ]
   }
-  
 }
