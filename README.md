@@ -11,6 +11,7 @@ Find out more about [Budibase](https://github.com/Budibase/budibase).
 As this data below is pretty minimalistic, here's the basics:
 
 - Download local the "datatables-1.0.0.tar.gz".
+- (WIP) Confirm it contains the 3 files `package.json, plugin.min.js, schema.json`
 - Load up your Budibase instance
 - Navigate to "Plugins" / "Add Plugin" (**Not Github installation - that is untested presently**)
 - "Add new plugin subpage", use the "Source" pulldown to select "File Upload"
